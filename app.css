@@ -1,0 +1,87 @@
+nav a{  
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(180, 85, 29);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 10px;
+  height: 20px;
+  margin-right: 10px
+}
+
+html{
+  background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.table-container {
+  width: 80%;
+  height: 50%; 
+  max-height: 300px;
+  margin: 10px auto;
+  overflow-y: auto; 
+  background-color: rgb(227, 248, 248);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(227, 248, 248);
+}
+
+table, tr, td ,th{
+  border: 1px solid;
+  background-color:rgb(239, 252, 204);
+}
+
+
+button{
+  display:flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: rgb(105, 150, 150);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  height: 40px;
+
+  min-width: fit-content;
+  margin: auto;
+}
+
+*{
+  font-family: "Tomorrow", sans-serif;
+  
+}
+
+h1, div.welcomeTitle{
+  font-family: "Lacquer", system-ui;
+}
+input, select {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid rgb(141, 158, 122);
+  border-radius: 5px;
+  outline: none;   /*  when mouse clicked, black outline will be removed */
+  background-color: rgb(250, 255, 233);
+}
+
+input:focus, select:focus {
+  background-color: rgb(227, 248, 248);
+  border-color: rgb(141, 158, 122);
+  box-shadow: 0 0 5px rgb(72, 207, 87);
+}
+
+form {
+  display: flex;
+  flex-direction: row; 
+  width:20vh;
+}
+
+form label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 10px;
+}

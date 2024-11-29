@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management- 200709057</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="student.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="course.html">Course</a>
+        <a href="student.html">Student</a>
+    </nav>
+
+    <h1 >Course Management System</h1>
+    <h1>Student List</h1>
+    <label for="studentNameFilter">Filter by Student Name: </label>
+    <input type="text" id="studentNameFilter" placeholder="Search by name" oninput="updateStudentsTable()">
+    <div class="table-container">
+    <table id="studentTable">        
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Number</th>
+                <th>GPA</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table></div>
+    <div id="courseDetailsSection" style="display: none;">
+        <h2>Course Details</h2>
+        <div class="table-container">
+        <table id="courseDetailsTable">
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Midterm</th>
+                    <th>Final</th>
+                    <th>Grade</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table></div>
+        <button onclick="closeCourseDetails()">Close</button>
+    </div>
+
+  
+</body>
+</html>
